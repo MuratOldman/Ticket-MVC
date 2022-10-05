@@ -5,11 +5,11 @@ public enum Status {
 
     private final String value;
 
-    private String getValue() {
-        return value;
+    private Status(String value) {
+        this.value = value;
     }
 
-    Status(String value) {
-        this.value = value;
+    public String getValue(){
+        return value;
     }
 }
